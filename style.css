@@ -7,7 +7,6 @@
 }
 
 .flexbox-item {
-    display:block;
     width:200px;
     margin:20px;
     border: 3px solid black;
@@ -16,6 +15,9 @@
     overflow: hidden;
     transition: all 1s;
     box-shadow: 0 3px 10px black;
+    text-align:center;
+
+
 }
 
 .flexbox-item-1 {
@@ -31,8 +33,12 @@
 }
 
 .flexbox-item:hover {
+    display:inline-block;
+    border-radius:20px;
     overflow:visible;
     flex-grow:0.5;
     max-width:fit-content;
-    max-height:auto;
+    max-height:fit-content;
+    vertical-align:middle;
+    cursor:pointer;
 }
